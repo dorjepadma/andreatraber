@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Homepage from './pages/homepage/homepage.components.jsx';
 import './App.css';
 
