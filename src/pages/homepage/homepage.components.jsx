@@ -1,6 +1,7 @@
 
 import Hung from '../../assets/images/hung.jpeg';
 
+import React from 'react';
 import './homepage.styles.scss';
 
 
