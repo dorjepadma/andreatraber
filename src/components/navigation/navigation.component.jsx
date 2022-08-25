@@ -28,7 +28,7 @@ const Navigation = () => {
 <div >
 <div className={'navigation'}>
 
-      <Link  to='/' >
+      <Link  to='/home' >
         <img className='navigation_Logo' src={Hung} alt='nestz logo'></img>
       </Link>
       <div className='navigation_Menu'>
