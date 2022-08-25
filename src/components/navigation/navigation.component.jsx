@@ -11,7 +11,7 @@ import { Link, Outlet } from 'react-router-dom';
 // import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
 
-import Hung from '../../assets/images/hung.jpeg';
+import BuddhaEyes from '../../assets/images/BuddhaEyes.png';
 
 // import { NavigationContainer, 
 //   HeaderLogo, 
@@ -26,10 +26,10 @@ const Navigation = () => {
 
   return (
 <div >
-<div className={'navigation'}>
+<div className='navigation'>
 
       <Link  to='/home' >
-        <img className='navigation_Logo' src={Hung} alt='nestz logo'></img>
+        <img className='navigation_Logo' src={BuddhaEyes} alt='nestz logo'></img>
       </Link>
       <div className='navigation_Menu'>
         <Link className='navigation_Item'  to='/home' >HOME</Link>

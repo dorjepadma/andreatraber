@@ -1,0 +1,19 @@
+.collectionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.collectionsText {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}

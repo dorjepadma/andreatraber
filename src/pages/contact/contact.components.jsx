@@ -3,7 +3,7 @@ import './contact.styles.scss';
 const Contact = () => {
   return (
     <div className="contactContainer">
-      <h1> Behold a Page to Contact us </h1>
+      <h1> Reach me here </h1>
     </div>
   );
 
