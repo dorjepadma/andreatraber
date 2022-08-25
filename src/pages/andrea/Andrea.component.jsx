@@ -15,7 +15,7 @@ const Andrea = () => {
         <div className='subTitle'> Unfolding Wisdom through paint, brush, and dance.
         </div>
       </div>
-      <img className='homePageImage' src={AndreaImage} alt='Andreas paintings'>
+      <img className='homePageImage' src={AndreaImage} alt='Andrea'>
 
       </img>
     </div>
