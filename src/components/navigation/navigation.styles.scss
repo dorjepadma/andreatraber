@@ -1,22 +1,21 @@
-.navigation { 
-    // height: 70px; 
-    // width: 100%; 
-    // display: flex; 
-    // justify-content: space-between; 
-    // background-color: #0EBFE9;
-    // padding: 3em;
-   
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 20%;
     background-color: #835E4A;
+    opacity: 0.8;
 
     &_Logo {
       display: grid;
       place-items: center;
-      height: 120px;
+      height: auto;
+      width: 100%;
       font-size: 1.5rem;
       font-weight: 700;
       font-family: 'Mochiy Pop P one', sans-serif;

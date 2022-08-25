@@ -3,7 +3,7 @@ import './social.styles.scss';
 const Social = () => {
   return (
     <div className="socialContainer">
-      <h1> Behold a social place </h1>
+      <h1> A social place where friends gather </h1>
     </div>
   );
 
