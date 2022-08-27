@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Homepage from './pages/homepage/homepage.components.jsx';
 import Andrea from './pages/andrea/Andrea.component.jsx';
 import Social from './pages/social/social.component.jsx';
@@ -15,10 +15,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+
         <Routes>
           <Route path='/' element={<Navigation />} >
-            <Route exact path='/home' index element={<Homepage />} />
+            <Route index element={<Homepage />} />
+            <Route path='home' index element={<Homepage />} />
             <Route exact path='/collections' index element={<Collections />} />
             <Route exact path='/andrea' index element={<Andrea />} />
             <Route exact path='/contemplations' index element={<Contemplations />} />
@@ -28,7 +29,7 @@ function App() {
             <Route exact path='/contact' index element={<Contact />} />
           </Route>
         </Routes>
-        </BrowserRouter>
+
     </div>
   );
 }
