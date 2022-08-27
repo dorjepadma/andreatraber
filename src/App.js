@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Homepage from './pages/homepage/homepage.components.jsx';
 import Andrea from './pages/andrea/Andrea.component.jsx';
 import Social from './pages/social/social.component.jsx';
@@ -15,20 +15,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+  <Navigation />
         <Routes>
-          <Route path='/' element={<Navigation />} >
-            <Route path='/home' element={<Homepage />} />
-            <Route path='/collections' element={<Collections />} />
-            <Route path='/andrea' element={<Andrea />} />
-            <Route path='/contemplations' element={<Contemplations />} />
-            <Route path='/meditations' element={<Meditations />} />
-            <Route path='/social' element={<Social />} />
-            <Route path='/cinema' element={<Cinema />} />
-            <Route path='/contact' element={<Contact />} />
+          <Route path='/' element={<Homepage />} >
+            <Route exact path='/home' element={<Homepage />} />
+            <Route exact path='/collections' element={<Collections />} />
+            <Route exact path='/andrea' element={<Andrea />} />
+            <Route exact path='/contemplations' element={<Contemplations />} />
+            <Route exact path='/meditations' element={<Meditations />} />
+            <Route exact path='/social' element={<Social />} />
+            <Route exact path='/cinema' element={<Cinema />} />
+            <Route exact path='/contact' element={<Contact />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+ 
     </div>
   );
 }
