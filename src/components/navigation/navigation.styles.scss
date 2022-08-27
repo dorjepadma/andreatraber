@@ -1,9 +1,8 @@
+
 .navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -15,55 +14,35 @@
       display: grid;
       place-items: center;
       height: auto;
+      height: 12vh;
       width: 100%;
-      font-size: 1.5rem;
-      font-weight: 700;
-      font-family: 'Mochiy Pop P one', sans-serif;
   }
-
-  &_Menu {
-      position: relative;
-  }
-  &_Item {
-    display: flex;
-    align-items: center;
-    place-content: flex-start;
-    padding: 1rem 3rem;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: black;
-    transition: color 0.3s ease-in-out;
-
-    &.active {
-        color: #fff;
-    }
-
-    &__icon {
-        margin-right: 1rem;
-
-        i {
-            font-size: 1.75rem;
-        }
-    }
-}}
-    
-.logo-container { 
-  height: 100%; 
-  width: 70px; 
-
-  }
-  
-.nav-links-container { width: 50%; 
-  height: 100%; 
-  display: flex; 
-  align-items: center; 
-  justify-content: flex-end; 
-  
-  .nav-link { padding: 10px 15px; 
-    cursor: pointer; }
 }
-.headerLogo {
-  height: 4em;
-  border: .1em solid #021a40;
-  margin-top: -2em;
+.pageHeader {
+  display: flex;
+  align-items: row;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+  height: auto;
+  padding: 2vh;
+  cursor: pointer;
+  padding: '10px';
+  margin-top:-25;
+  background-color: '#708090';
+ }
+  
+.background{
+  height: 180vh;
+  background-color: #835E4A;
+  opacity: 0.8;
 }
+.Item {
+  display: flex;
+  align-items: center;
+  place-content: flex-start;
+  padding: .5rem;
+  color: black;
+  cursor: pointer;
+  font-size: 700;
+ }
