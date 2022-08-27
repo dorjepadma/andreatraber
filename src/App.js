@@ -8,7 +8,6 @@ import Contemplations from './pages/contemplations/contemplations.components.jsx
 import Cinema from './pages/cinema/cinema.components.jsx';
 import Contact from './pages/contact/contact.components.jsx';
 import Meditations from './pages/meditations/meditations.component.jsx';
-import AppLayout from './components/AppLayout/applayout.component.jsx';
 
 import Navigation from './components/navigation/navigation.component.jsx';
 import './App.css';
@@ -18,7 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<AppLayout />} >
+          <Route path='/' element={<Navigation />} >
             <Route path='/home' element={<Homepage />} />
             <Route path='/collections' element={<Collections />} />
             <Route path='/andrea' element={<Andrea />} />
