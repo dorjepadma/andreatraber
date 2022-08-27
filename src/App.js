@@ -18,14 +18,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Navigation />} >
-            <Route exact path='/home' element={<Homepage />} />
-            <Route exact path='/collections' element={<Collections />} />
-            <Route exact path='/andrea' element={<Andrea />} />
-            <Route exact path='/contemplations' element={<Contemplations />} />
-            <Route exact path='/meditations' element={<Meditations />} />
-            <Route exact path='/social' element={<Social />} />
-            <Route exact path='/cinema' element={<Cinema />} />
-            <Route exact path='/contact' element={<Contact />} />
+            <Route exact path='/home' index element={<Homepage />} />
+            <Route exact path='/collections' index element={<Collections />} />
+            <Route exact path='/andrea' index element={<Andrea />} />
+            <Route exact path='/contemplations' index element={<Contemplations />} />
+            <Route exact path='/meditations' index element={<Meditations />} />
+            <Route exact path='/social' index element={<Social />} />
+            <Route exact path='/cinema' index element={<Cinema />} />
+            <Route exact path='/contact' index element={<Contact />} />
           </Route>
         </Routes>
         </BrowserRouter>
