@@ -1,15 +1,14 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Homepage from './pages/homepage/homepage.components.jsx';
-import Andrea from './pages/andrea/Andrea.component.jsx';
-import Social from './pages/social/social.component.jsx';
+import { Routes, Route} from 'react-router-dom';
+import Homepage from './pages/homepage/homepage.component';
+import Andrea from './pages/andrea/Andrea.component';
+import Social from './pages/social/social.component';
 import Collections from './pages/collections/collections.component';
-import Contemplations from './pages/contemplations/contemplations.components.jsx';
-import Cinema from './pages/cinema/cinema.components.jsx';
-import Contact from './pages/contact/contact.components.jsx';
-import Meditations from './pages/meditations/meditations.component.jsx';
+import Contemplations from './pages/contemplations/contemplations.component';
+import Cinema from './pages/cinema/cinema.component';
+import Contact from './pages/contact/contact.component';
+import Meditations from './pages/meditations/meditations.component';
 
-import Navigation from './components/navigation/navigation.component.jsx';
+import Navigation from './components/navigation/navigation.component';
 import './App.css';
 
 function App() {
@@ -20,13 +19,13 @@ function App() {
           <Route path='/' element={<Navigation />} >
             <Route index element={<Homepage />} />
             <Route path='home' index element={<Homepage />} />
-            <Route exact path='/collections' index element={<Collections />} />
-            <Route exact path='/andrea' index element={<Andrea />} />
-            <Route exact path='/contemplations' index element={<Contemplations />} />
-            <Route exact path='/meditations' index element={<Meditations />} />
-            <Route exact path='/social' index element={<Social />} />
-            <Route exact path='/cinema' index element={<Cinema />} />
-            <Route exact path='/contact' index element={<Contact />} />
+            <Route path='/collections' index element={<Collections />} />
+            <Route path='/andrea' index element={<Andrea />} />
+            <Route path='/contemplations' index element={<Contemplations />} />
+            <Route path='/meditations' index element={<Meditations />} />
+            <Route path='/social' index element={<Social />} />
+            <Route path='/cinema' index element={<Cinema />} />
+            <Route path='/contact' index element={<Contact />} />
           </Route>
         </Routes>
 
