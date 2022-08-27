@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, } from 'react-router-dom';
+import React, { useState, } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import {
   MDBSideNav,
   MDBSideNavMenu,
@@ -123,7 +123,7 @@ const Navigation = () => {
         <Link className='navigation_Item' to='/contact' >CONTACT</ Link> */}
       </div>
       </MDBSideNav>
-
+<Outlet/>
       
 </div>
 
