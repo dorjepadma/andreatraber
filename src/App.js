@@ -15,7 +15,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-  
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Navigation />} >
             <Route exact path='/home' element={<Homepage />} />
@@ -28,7 +28,7 @@ function App() {
             <Route exact path='/contact' element={<Contact />} />
           </Route>
         </Routes>
- 
+        </BrowserRouter>
     </div>
   );
 }
