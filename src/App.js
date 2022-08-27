@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 import Homepage from './pages/homepage/homepage.components.jsx';
 import Andrea from './pages/andrea/Andrea.component.jsx';
 import Social from './pages/social/social.component.jsx';
@@ -15,9 +15,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-  <Navigation />
+  
         <Routes>
-          <Route path='/' element={<Homepage />} >
+          <Route path='/' element={<Navigation />} >
             <Route exact path='/home' element={<Homepage />} />
             <Route exact path='/collections' element={<Collections />} />
             <Route exact path='/andrea' element={<Andrea />} />

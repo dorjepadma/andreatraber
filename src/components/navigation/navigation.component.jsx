@@ -22,11 +22,6 @@ import {
 
 import BuddhaEyes from '../../assets/images/BuddhaEyes.png';
 
-// import { NavigationContainer, 
-//   HeaderLogo, 
-//   NavBarLinkContainer, 
-//   NavBarLink, 
-//  } from './navigation.styles';
 import './navigation.styles.scss';
 
 const Navigation = () => {
@@ -53,65 +48,46 @@ const Navigation = () => {
       <div className='navigation_Menu'>
         <MDBSideNavMenu className='background'>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink  href='/home'>
+            <MDBSideNavLink  href='home'>
               HOME
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/meditations'>
+            <MDBSideNavLink href='meditations'>
               MEDITATIONS
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/collections'>
+            <MDBSideNavLink href='collections'>
             COLLECTIONS
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/andrea'>
+            <MDBSideNavLink href='andrea'>
             ANDREA
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/contemplations'>
+            <MDBSideNavLink href='contemplations'>
             CONTEMPLATIONS
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/social'>
+            <MDBSideNavLink href='social'>
             SOCIAL
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/cinema'>
+            <MDBSideNavLink href='cinema'>
             CINEMA
             </MDBSideNavLink>
           </MDBSideNavItem>
           <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='/contact'>
+            <MDBSideNavLink href='contact'>
             CONTACT
             </MDBSideNavLink>
           </MDBSideNavItem>
-          {/* <MDBSideNavItem>
-            <MDBSideNavLink icon='angle-down' shouldBeExpanded={basicCollapse1} onClick={() => setBasicCollapse1(!basicCollapse1)}>
-              <MDBIcon fas icon='grin' className='fa-fw me-3' />
-              Category 1
-            </MDBSideNavLink>
-            <MDBSideNavCollapse show={basicCollapse1}>
-              <MDBSideNavLink>Link 2</MDBSideNavLink>
-              <MDBSideNavLink>Link 3</MDBSideNavLink>
-            </MDBSideNavCollapse>
-          </MDBSideNavItem> */}
-          {/* <MDBSideNavItem>
-            <MDBSideNavLink icon='angle-down' shouldBeExpanded={basicCollapse2} onClick={() => setBasicCollapse2(!basicCollapse2)}>
-              <MDBIcon fas icon='grin' className='fa-fw me-3' />
-              Category 2
-            </MDBSideNavLink>
-            <MDBSideNavCollapse show={basicCollapse2}>
-              <MDBSideNavLink>Link 4</MDBSideNavLink>
-              <MDBSideNavLink>Link 5</MDBSideNavLink>
-            </MDBSideNavCollapse>
-          </MDBSideNavItem> */}
+     
         </MDBSideNavMenu>
         {/* <Link className='navigation_Item'  to='/home' >HOME</Link>
         <Link className='navigation_Item' to='/meditations' >MEDITATIONS</ Link>
