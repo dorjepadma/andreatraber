@@ -7,16 +7,13 @@ import './homepage.styles.scss';
 
 const Homepage = () => {
   return (
-    <div className="homepage">
-    <div container className='pageHeader' col='2'>
-        <h1> Andrea Traber</h1>
+    <div container className='homepage'>
+      <div  className='pageHeader'>
+          <h1> Andrea Traber</h1>
       </div>
         <div className='subTitle'> Visions of the 5 elements
-        </div>
-
-      <img className='homePageImage' src={Hung} alt='Andreas paintings'>
-
-      </img>
+      </div>
+      <img className='homePageImage' src={Hung} alt='Andreas paintings'/>
     </div>
   );
 }
