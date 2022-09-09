@@ -1,13 +1,14 @@
 import React, { useState, } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import {
-  MDBSideNav,
-  MDBSideNavMenu,
-  MDBSideNavItem,
-  MDBSideNavLink,
-  MDBSideNavCollapse,
-  MDBBtn,
-  MDBIcon
+  MDBIcon,
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavbarNav,
+  MDBNavbarLink,
+  MDBCollapse
 } from 'mdb-react-ui-kit';
 // import { useSelector } from 'react-redux';
 
@@ -26,84 +27,38 @@ import './navigation.styles.scss';
 
 const Navigation = () => {
 
-  const [basicOpen, setBasicOpen] = useState(true);
-  // const [basicCollapse1, setBasicCollapse1] = useState(true);
-  // const [basicCollapse2, setBasicCollapse2] = useState(false);
 
+  const [showNavSecond, setShowNavSecond] = useState(false);
   return (
 <div >
-      <div container className='pageHeader' col='2'>
-        <h1> Andrea Traber</h1>
-        <MDBBtn onClick={() => setBasicOpen(!basicOpen)} style={{ backgroundColor: '#835E4A', left:'38%', height: '60px', marginBottom: '2px'}}>
-          <MDBIcon fas icon='bars'  />
-        </MDBBtn>
-
-      </div>
-
-        <div >
-      <MDBSideNav isOpen={basicOpen} absolute getOpenState={(e) => setBasicOpen(e)}>
-      <Link  to='/home' >
-        <img className='navigation_Logo' src={BuddhaEyes} alt='nestz logo'></img>
-      </Link>
-      <div className='navigation_Menu'>
-        <MDBSideNavMenu className='background'>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink  href='home'>
-              HOME
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='meditations'>
-              MEDITATIONS
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='collections'>
-            COLLECTIONS
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='andrea'>
-            ANDREA
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='contemplations'>
-            CONTEMPLATIONS
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='social'>
-            SOCIAL
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='cinema'>
-            CINEMA
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-          <MDBSideNavItem className='Item'>
-            <MDBSideNavLink href='contact'>
-            CONTACT
-            </MDBSideNavLink>
-          </MDBSideNavItem>
-     
-        </MDBSideNavMenu>
-        {/* <Link className='navigation_Item'  to='/home' >HOME</Link>
-        <Link className='navigation_Item' to='/meditations' >MEDITATIONS</ Link>
-        <Link className='navigation_Item' to='/collections' >COLLECTIONS</ Link>
-        <Link className='navigation_Item' to='/andrea' >ANDREA</ Link>
-        <Link className='navigation_Item' to='/contemplations' >CONTEMPLATIONS</ Link>
-        <Link className='navigation_Item' to='/social' >SOCIAL</ Link>
-        <Link className='navigation_Item' to='/cinema' >CINEMA</ Link>
-        <Link className='navigation_Item' to='/contact' >CONTACT</ Link> */}
-      </div>
-      </MDBSideNav>
+    <div style={{fontFamily: 'Ubuntu',}}>
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='HOME'>ANDREA TRABER STUDIOS</MDBNavbarBrand>
+        <MDBNavbarToggler
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setShowNavSecond(!showNavSecond)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+        <MDBCollapse navbar show={showNavSecond}>
+          <MDBNavbarNav>
+            <MDBNavbarLink href='collections'>COLLECTIONS</MDBNavbarLink>
+            <MDBNavbarLink href='andrea'>ANDREA</MDBNavbarLink>
+            <MDBNavbarLink href='social'>SOCIAL</MDBNavbarLink>
+            <MDBNavbarLink href='cinema'>CINEMA</MDBNavbarLink>
+            <MDBNavbarLink href='contact'>CONTACT</MDBNavbarLink>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
+    </div>
 <Outlet/>
       
 </div>
 
-</div>
+
 
 )}
 
