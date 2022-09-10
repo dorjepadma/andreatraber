@@ -1,19 +1,22 @@
 
 .navigation {
-
-
   align-items: center;
     width: 100%;
     opacity: 0.8;
-    font-family: 'Ubuntu'
+    font-family: 'Ubuntu';
+    color: #7d8e8f
+     ;
+}
+.Logo {
+  display: grid;
+  place-items: center;
+  height: auto;
+  height: 8vh;
+  width: 8vh;
+  margin-left: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
 
-    &_Logo {
-      display: grid;
-      place-items: center;
-      height: auto;
-      height: 12vh;
-      width: 100%;
-  }
 }
 .pageHeader {
   display: flex;
@@ -28,12 +31,7 @@
   margin-top:-25;
   background-color: '#708090';
  }
-  
-.background{
-  height: 180vh;
-  background-color: #835E4A;
-  opacity: 0.8;
-}
+
 .Item {
   display: flex;
   align-items: center;
