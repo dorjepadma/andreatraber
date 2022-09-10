@@ -21,20 +21,18 @@ import {
 // import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
 
-import BuddhaEyes from '../../assets/images/BuddhaEyes.png';
+import Sunflowers from '../../assets/images/Sunflowers.png';
 
 import './navigation.styles.scss';
 
 const Navigation = () => {
-
-
   const [showNavSecond, setShowNavSecond] = useState(false);
   return (
 <div >
-    <div style={{fontFamily: 'Ubuntu',}}>
+    <div className='navigation'>
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='HOME'>ANDREA TRABER STUDIOS</MDBNavbarBrand>
+
         <MDBNavbarToggler
           aria-expanded='false'
           aria-label='Toggle navigation'
@@ -51,6 +49,21 @@ const Navigation = () => {
             <MDBNavbarLink href='contact'>CONTACT</MDBNavbarLink>
           </MDBNavbarNav>
         </MDBCollapse>
+        <MDBNavbarBrand href='HOME'>
+          <div>
+
+          ANDREA TRABER STUDIOS
+          </div>
+          <div >
+
+        <img className='Logo'
+              src={Sunflowers}
+              height='60'
+              alt='Buddha Eyes'
+              loading='lazy'
+            />
+          </div>
+          </MDBNavbarBrand>
       </MDBContainer>
     </MDBNavbar>
     </div>
