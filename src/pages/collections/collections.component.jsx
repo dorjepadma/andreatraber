@@ -1,84 +1,113 @@
 import React from 'react';
 import Sky from '../../assets/images/CollectionsImages/Sky.png';
+import Sunflowers from '../../assets/images/CollectionsImages/Sunflowers-1.png';
+import Hung from '../../assets/images/CollectionsImages/hung.jpeg';
+import Fire from '../../assets/images/CollectionsImages/fire2.jpeg';
+import Sea from '../../assets/images/CollectionsImages/atsea2.jpeg';
 import {
   MDBCarousel,
-  MDBCarouselElement,
   MDBCarouselItem,
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage,
+  MDBBtn
 } from 'mdb-react-ui-kit';
  
 import './collections.styles.scss';
 
 const Collections = () => {
   return (
-    // <div className="collectionsContainer">
-    //   <div className= 'collectionsText'>
-    //     <div>
-    //   <h1> Andrea's Collections </h1>
-    //     </div>
-    //     <div className='collections'>
-        <MDBCarousel  showControls showIndicators>
-            <MDBCarouselItem className='active'>
-              <MDBCarouselElement
-              className="collectionsCarousel"
-              itemID={1}
-              src={Sky}
-              alt='Sky Painting'
+    <div  className="collectionsContainer">
+      <div className='collectionsTitle'>
+        <h1> Andrea's Collections </h1>
+      </div>
+ 
+        <MDBCarousel  showControls showIndicators fade className='collectionsCarousel'>
+        <div class="col-lg-12">
+            <MDBCarouselItem 
+              className='w-100 d-block active'
+              itemID={0}
             >
-              <h5>Sky</h5>
-              <p>This collection highlights a spacious mind.</p>
-            </MDBCarouselElement>
+            <MDBCard className='collectionCard'>
+              <MDBCardImage src={Sky} position='top' alt='Painting fo the Sky' />
+              <MDBCardBody>
+                <MDBCardTitle>Sky</MDBCardTitle>
+                <MDBCardText>
+                This collection highlights a spacious mind
+                </MDBCardText>
+                <MDBBtn href='#'>View Collection</MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
           </MDBCarouselItem>
-          <MDBCarouselItem className='active'>
-              <MDBCarouselElement
-              className="collectionsCarousel"
+          <MDBCarouselItem 
+              className="w-100 d-block"
               itemID={1}
-              src={Sky}
-              alt='Sky Painting'
             >
-              <h5>Fun</h5>
-              <p>Playful and delightful paintings celebrating life.</p>
-            </MDBCarouselElement>
+          <MDBCard className='collectionCard'>
+              <MDBCardImage src={Sunflowers} position='top' alt='Painting fo the Sky'  />
+              <MDBCardBody>
+                <MDBCardTitle>Fun</MDBCardTitle>
+                <MDBCardText>
+                This collection highlights a playful experience through art
+                </MDBCardText>
+                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
           </MDBCarouselItem>
-      {/* <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={2}
-        src='https://mdbootstrap.com/img/new/slides/042.jpg'
-        alt='...'
-      >
-        <h5>Fun</h5>
-        <p>Playful and delightful paintings celebrating life</p>
-      </MDBCarouselItem>
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={3}
-        src='https://mdbootstrap.com/img/new/slides/043.jpg'
-        alt='...'
-      >
-        <h5>Impressions</h5>
-        <p>Contemplative paintings inspired by Impressionism</p>
-      </MDBCarouselItem>
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={3}
-        src='https://mdbootstrap.com/img/new/slides/043.jpg'
-        alt='...'
-      >
-        <h5>Elements</h5>
-        <p>Contemplative paintings inspired by Impressionism</p>
-      </MDBCarouselItem>
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={3}
-        src='https://mdbootstrap.com/img/new/slides/043.jpg'
-        alt='...'
-      >
-        <h5>Calm</h5>
-        <p>Contemplative paintings inspired by Impressionism</p>
-      </MDBCarouselItem> */}
+          <MDBCarouselItem 
+              className="w-100 d-block"
+              itemID={2}
+            >
+            <MDBCard className='collectionCard'>
+              <MDBCardImage src={Hung} position='top' alt='Painting fo the Sky' />
+              <MDBCardBody>
+                <MDBCardTitle>Meditations</MDBCardTitle>
+                <MDBCardText>
+                This collection highlights visionary paintings from Andrea's personal spiritual practice.
+                </MDBCardText>
+                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCarouselItem>
+          <MDBCarouselItem 
+              className="w-100 d-block"
+              itemID={3}
+            >
+            <MDBCard className='collectionCard'>
+              <MDBCardImage src={Fire} position='top' alt='The element of Fire' />
+              <MDBCardBody>
+                <MDBCardTitle>Elements</MDBCardTitle>
+                <MDBCardText>
+                This collection highlights the raw power of the elements
+                </MDBCardText>
+                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCarouselItem> 
+          <MDBCarouselItem 
+              className="w-100 d-block"
+              itemID={4}
+            >
+            <MDBCard className='collectionCard'>
+              <MDBCardImage src={Sea} position='top' alt='Abstract Sail boats at sea' />
+              <MDBCardBody>
+                <MDBCardTitle>Impressions</MDBCardTitle>
+                <MDBCardText>
+                This collection highlights Impressionistic paintings inspired by the bay area and travels.
+                </MDBCardText>
+                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCarouselItem>
+         
+    </div>
     </MDBCarousel>
-    //     </div>
-    //   </div>
-    // </div>
+       {/* </div>
+     </div> */}
+     </div>
+
   );
 
 }
