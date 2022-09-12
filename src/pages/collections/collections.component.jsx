@@ -1,7 +1,7 @@
 import React from 'react';
 import Sky from '../../assets/images/CollectionsImages/Sky.png';
-import Sunflowers from '../../assets/images/Sunflowers.png';
-import Hung from '../../assets/images/hung.jpeg';
+import Sunflowers from '../../assets/images/CollectionsImages/Sunflowers-1.png';
+import Hung from '../../assets/images/CollectionsImages/hung.jpeg';
 import Fire from '../../assets/images/CollectionsImages/fire2.jpeg';
 import Sea from '../../assets/images/CollectionsImages/atsea2.jpeg';
 import {
@@ -93,9 +93,9 @@ const Collections = () => {
             <MDBCard className='collectionCard'>
               <MDBCardImage src={Sea} position='top' alt='Abstract Sail boats at sea' />
               <MDBCardBody>
-                <MDBCardTitle>Meditations</MDBCardTitle>
+                <MDBCardTitle>Impressions</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights visionary paintings from Andrea's personal spiritual practice.
+                This collection highlights Impressionistic paintings inspired by the bay area and travels.
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
