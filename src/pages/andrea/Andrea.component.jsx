@@ -16,7 +16,7 @@ const Andrea = () => {
         <div className='subTitle'> Unfolding Wisdom through paint, brush, and dance.
         </div>
         </div>
-<MDBContainer >
+<MDBContainer fluid >
   <MDBRow between>
     <MDBCol size='md'>
     <img className='homePageImage' src={AndreaImage} alt='Andrea'/>
