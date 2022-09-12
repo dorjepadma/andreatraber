@@ -35,7 +35,7 @@ const Collections = () => {
               <MDBCardBody>
                 <MDBCardTitle>Sky</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights a spacious mind
+                This collection highlights a spacious mind. The sky is a place of freedom and imagination. It is a place of peace and tranquility. It is a place of endless possibilities. Through these paintings a serene meditative quality of mind is expressed. The result is transcendental experiences of contemplation. 
                 </MDBCardText>
                 <MDBBtn href='#'>View Collection</MDBBtn>
               </MDBCardBody>
@@ -50,7 +50,7 @@ const Collections = () => {
               <MDBCardBody>
                 <MDBCardTitle>Fun</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights a playful experience through art
+                This collection highlights a playful experience through art. Here Andrea is playing with light hearted themes that reflect the joy of the heart and simplicity of the human mind unencumbered by the worries of daily life. 
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
@@ -65,7 +65,7 @@ const Collections = () => {
               <MDBCardBody>
                 <MDBCardTitle>Meditations</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights visionary paintings from Andrea's personal spiritual practice.
+                This collection highlights visionary paintings from Andrea's personal spiritual practice. Andrea has studied esoteric Buddhism for decades and the unfolding of her understanding is reflected in these paintings, each express of the wisdom of the teachings she has received.
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
@@ -80,7 +80,7 @@ const Collections = () => {
               <MDBCardBody>
                 <MDBCardTitle>Elements</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights the raw power of the elements
+                This collection highlights the raw power of the elements. The five elements are highlighted in the experience of the viewer through a mix of color and stroke style, creating a unique experience for each painting. As you look at these pieces observe how your mind reacts to them both emotionally and mentally. 
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
@@ -95,7 +95,7 @@ const Collections = () => {
               <MDBCardBody>
                 <MDBCardTitle>Impressions</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights Impressionistic paintings inspired by the bay area and travels.
+                This collection highlights impressionistic paintings inspired by the San Francisco Bay Area and world travels. These paintings capture the essence of a place, emotion, or mood. They are evocative and transport the viewer through a mix of color, texture, and light.
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
