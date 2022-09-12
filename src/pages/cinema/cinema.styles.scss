@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+ 
 }
 .theaterTitle {
   font-family: 'Lobster', cursive;
@@ -25,4 +26,9 @@
   width: 100%;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.movieBox {
+  width:560px; 
+  height:315px; 
+  border: 5px solid rgb(23, 22, 22)
 }
