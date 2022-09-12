@@ -52,7 +52,7 @@ const Navigation = () => {
         <MDBNavbarBrand href='HOME'>
           <div>
 
-          ANDREA TRABER STUDIOS
+          ANDREA TRABER STUDIO
           </div>
           <div >
 
