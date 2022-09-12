@@ -63,7 +63,7 @@
   align-items: center;
   width: 25rem;
   height: auto;
-  margin:5px;
+
   background-color: rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   margin-right: 20px;
@@ -71,10 +71,10 @@
 }
 .text-center {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 .mb-0 {
-  padding: 1rem;
+  padding: 2rem;
 }
 .andreaBioContainer {
   display: flex;
@@ -86,8 +86,5 @@
   margin-bottom: 20px;
   margin-right: 20px;
   color:#fff;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    
-  }
+ 
 }
