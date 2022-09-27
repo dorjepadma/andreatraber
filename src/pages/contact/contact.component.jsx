@@ -6,8 +6,7 @@ const Contact = () => {
   return (
     <>
     <div className="contactContainer">
-      <h1> Reach me here </h1>
-    </div>
+      <h1> Reach Andrea here </h1>
     <form id='form' className='text-center' style={{ width: '100%', maxWidth: '300px' }}>
     <h2>Contact us</h2>
 
@@ -25,6 +24,7 @@ const Contact = () => {
       Send
     </MDBBtn>
   </form>
+    </div>
   </>
   );
 
