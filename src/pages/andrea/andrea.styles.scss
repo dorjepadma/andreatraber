@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 110%;
   background-image: url('../../assets/images/Andrea/coastalBeach.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,12 +30,14 @@
 } 
 
 .homePageImage {
-  width: auto;
+ 
+  width: 70%;
   height: 68%;
-  margin-bottom: 20rem;
+  margin-bottom: 20px;
   object-fit: cover;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 50);
   margin:3px;
+
 }
 .andreaTitle {
   font-family: 'Ubuntu';
@@ -57,16 +59,10 @@
 }
 .aboutAndrea {
   font-family: 'Ubuntu';
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 25rem;
   height: auto;
-
   background-color: rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  margin-right: 20px;
   color:#fff;
 }
 .text-center {
@@ -88,3 +84,9 @@
   color:#fff;
  
 }
+
+.bio{
+align-items: start;
+width: 100%;
+}
+

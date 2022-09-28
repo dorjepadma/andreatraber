@@ -17,11 +17,11 @@ const Andrea = () => {
         </div>
         </div>
 <MDBContainer fluid >
-  <MDBRow between>
-    <MDBCol size='md'>
+  <MDBRow between className='bio'>
+    <MDBCol >
     <img className='homePageImage' src={AndreaImage} alt='Andrea'/>
     </MDBCol>
-    <MDBCol size='md'>
+    <MDBCol size='md' >
     <div className='aboutAndrea'>
       <MDBTypography tag='h2' className='mb-0'>
       Painting is my life’s inspiration.  
