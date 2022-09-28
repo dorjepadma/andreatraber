@@ -5,15 +5,17 @@ const express = require("express");
 const multer = require("multer");
 // cors is used to provide a Connect/Express middleware that can be used to enable CORS with various options.
 const cors = require("cors");
+const config = require("./config");
+const routes = require("./routes");
 
 const app = express();
 const upload = multer();
 
-const port = process.env.PORT || 3000;
-
 app.use(cors());
-app.any();
+app.use(upload.none());
 
-app.listen(port, () => {
-  console.log('Express started on port: ', port);
+app.use("/api", routes);
+
+app.listen(config.PORT, () => {
+  console.log(`Server is running on port ${config.PORT}.`);
 });
