@@ -10,12 +10,10 @@ const Homepage = () => {
   return (
     <div container className='homepage'>
       <div  className='Title'>
-          <h1> Andrea Traber</h1>
+          <h1> Visions of the Five Elements</h1>
       </div>
-        <div className='subTitle'> Visions of the 5 elements
-      </div>
-      <div >
-      <img className='img-fluid shadow-4' src={Hung} alt='Andreas paintings'/>
+      <div>
+        <img className='img-fluid shadow-4' src={Hung} alt='Andreas paintings'/>
       </div>
     </div>
   );
