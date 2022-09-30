@@ -7,75 +7,33 @@ const Contact = () => {
 
     <div className="contactContainer">
       <div className="contactForm">
-      <MDBContainer>
-      <h2 className="h1-responsive font-weight-bold text-center my-5">
-        Contact Andrea
-      </h2>
-      <p className="text-center w-responsive mx-auto pb-5">
-     If you would like to converse with Andrea about the paintings, please fill out the form below.  We will get back to you as soon as possible.
-      </p>
-      <MDBRow>
-        <MDBCol md="9" className="md-0 mb-5">
-          <form>
-            <MDBRow>
-              <MDBCol md="6">
-                <div className="md-form mb-0">
-                  <MDBInput type="text" id="contact-name" label="Your name" />
-                </div>
-              </MDBCol>
-              <MDBCol md="6">
-                <div className="md-form mb-0">
-                  <MDBInput
-                    type="text"
-                    id="contact-email"
-                    label="Your email"
-                  />
-                </div>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md="12">
-                <div className="md-form mb-0">
-                  <MDBInput type="text" id="contact-subject" label="Subject" />
-                </div>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow>
-              <MDBCol md="12">
-                <div className="md-form mb-0">
-                  <MDBInput
-                    type="textarea"
-                    id="contact-message"
-                    label="Your message"
-                  />
-                </div>
-              </MDBCol>
-            </MDBRow>
-          </form>
-          <div className="text-center text-md-left">
-            <MDBBtn color="primary" size="md">
-              Send
-            </MDBBtn>
-          </div>
-        </MDBCol>
-        <MDBCol md="3" className="text-center ">
-          <ul className="list-unstyled mb-0">
-            <li>
-              <MDBIcon icon="map-marker-alt" size="2x" className="blue-text" />
-              <p>San Francisco, USA</p>
-            </li>
-            <li>
-              <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
-              <p>+ 01 234 567 89</p>
-            </li>
-            <li>
-              <MDBIcon icon="envelope" size="2x" className="blue-text mt-4" />
-              <p className='contactStyle'>andrea@andreatraber.studio</p>
-            </li>
-          </ul>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
+      <form id='form' className='text-center' style={{ width: '100%', maxWidth: '300px' }}>
+          <h2>Reach Andrea here:</h2>
+
+          <MDBValidationItem className='mb-3' required>
+          <MDBInput label='Name' v-model='name' wrapperClass='mb-4' required/>
+          </MDBValidationItem>
+
+          <MDBValidationItem className='mb-3' required> 
+          <MDBInput type='email' label='Email address' v-model='email' wrapperClass='mb-4' required/>
+          </MDBValidationItem>
+
+          <MDBValidationItem className='mb-3' required>
+          <MDBInput label='Subject' v-model='subject' wrapperClass='mb-4' required/>
+          </MDBValidationItem>
+
+          <MDBValidationItem className='mb-3' required>
+          <MDBTextArea wrapperClass='mb-4' label='Message' required/>
+          </MDBValidationItem>
+
+          <MDBValidationItem className='mb-3' required>
+          <MDBCheckbox wrapperClass='d-flex justify-content-center' label='Send me copy' required/>
+          </MDBValidationItem>
+
+          <MDBBtn color='primary' block className='my-4'>
+            Send
+          </MDBBtn>
+        </form>
       </div>
     </div>
 
