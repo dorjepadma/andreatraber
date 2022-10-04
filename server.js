@@ -8,8 +8,8 @@ const cors = require("cors");
 const config = require("./config");
 const routes = require("./routes");
 
-const app = express();
 const upload = multer();
+const app = express();
 
 app.use(cors());
 app.use(upload.none());

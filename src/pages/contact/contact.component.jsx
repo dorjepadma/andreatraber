@@ -1,13 +1,26 @@
 import React from 'react';
 import { MDBInput, MDBCheckbox, MDBBtn, MDBTextArea, MDBValidationItem, MDBIcon, MDBRow, MDBCol, MDBContainer } from 'mdb-react-ui-kit';
+import Mailer from '../../components/Email/email.jsx';
+import Email from '../../assets/images/Contact/email.jpeg';
+
 import './contact.styles.scss';
 
 const Contact = () => {
+
   return (
 
     <div className="contactContainer">
       <div className="contactForm">
-      <form id='form' className='text-center' style={{ width: '100%', maxWidth: '300px' }}>
+        <MDBContainer>
+          <MDBRow>
+            <MDBCol >
+            <img
+      src={Email}
+      className='img-thumbnail'
+      alt='a phone to contact Andrea Traber'
+    />
+              <h1 className="contactTitle">Contact Andrea through a quick email</h1>
+      {/* <form id='form' className='text-center' style={{ width: '100%', maxWidth: '300px' }} >
           <h2>Reach Andrea here:</h2>
 
           <MDBValidationItem className='mb-3' required>
@@ -33,7 +46,11 @@ const Contact = () => {
           <MDBBtn color='primary' block className='my-4'>
             Send
           </MDBBtn>
-        </form>
+        </form> */}
+        <Mailer />
+            </MDBCol>
+      </MDBRow>
+    </MDBContainer>
       </div>
     </div>
 
