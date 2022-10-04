@@ -5,7 +5,7 @@ const router = require("express").Router({ mergeParams: true });
 const validate = require("../middleware/validate");
 
 // import for contact form routes controller
-const { ContactController } = require("../controllers/contact.controllers.js");
+const { ContactController } = require("../controllers/contact.controllers");
 
 router.post("/", validate, (req, res) => {
   const controller = new ContactController(req, res);

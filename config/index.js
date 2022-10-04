@@ -1,9 +1,8 @@
   require('dotenv').config();
 
   module.exports = {
-    PORT: process.env.PORT || 3000,
-    // eslint-disable-next-line no-undef
-    NODE_ENV,
+    PORT: process.env.PORT || 8080,
+    NODE_ENV: process.env.NODE_ENV,
     MAIL_HOST: process.env.MAIL_HOST,
     MAIL_PORT: process.env.MAIL_PORT,
     MAIL_USERNAME: process.env.MAIL_USERNAME,
