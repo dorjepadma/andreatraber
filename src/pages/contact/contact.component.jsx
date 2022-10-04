@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBInput, MDBCheckbox, MDBBtn, MDBTextArea, MDBValidationItem, MDBIcon, MDBRow, MDBCol, MDBContainer } from 'mdb-react-ui-kit';
+import { MDBRow, MDBCol, MDBContainer } from 'mdb-react-ui-kit';
 import Mailer from '../../components/Email/email.jsx';
 import Email from '../../assets/images/Contact/email.jpeg';
 

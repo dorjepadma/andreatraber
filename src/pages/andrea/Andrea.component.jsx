@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBTypography } from 'mdb-react-ui-kit';
+import { MDBContainer, MDBRow, MDBCol, MDBTypography, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from 'mdb-react-ui-kit';
 import AndreaImage from '../../assets/images/AndreaTraber.png';
 
 import './andrea.styles.scss';
@@ -18,8 +18,19 @@ const Andrea = () => {
         </div>
 <MDBContainer fluid >
   <MDBRow between className='bio'>
-    <MDBCol >
+    <MDBCol className='andreaInfo'>
     <img className='homePageImage' src={AndreaImage} alt='Andrea'/>
+    <MDBCard className='articleLink'>
+      <MDBCardBody>
+        <MDBCardTitle>Interveiw with Buddhist Door</MDBCardTitle>
+        <MDBCardText>
+          An interview with Andrea Traber for Buddhist Door magazine By Sarah C. Beasley
+        </MDBCardText>
+        <MDBBtn
+        href='https://www2.buddhistdoor.net/features/inner-and-outer-landscape-andrea-trabers-painting-path'
+        >Buddhist Door</MDBBtn>
+      </MDBCardBody>
+    </MDBCard>
     </MDBCol>
     <MDBCol size='md' >
     <div className='aboutAndrea'>
