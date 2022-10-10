@@ -12,8 +12,8 @@ const Homepage = () => {
       <div  className='Title'>
           <h1> Visions of the Five Elements</h1>
       </div>
-      <div>
-        <img className='img-fluid shadow-4' src={Hung} alt='Andreas paintings'/>
+      <div className='frontPieceContainer'>
+        <img className='frontPiece img-fluid shadow-4' src={Hung} alt='Andreas paintings'/>
       </div>
     </div>
   );

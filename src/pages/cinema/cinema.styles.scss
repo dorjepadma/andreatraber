@@ -22,13 +22,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: 20%;
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .movieBox {
-  width:560px; 
-  height:315px; 
-  border: 5px solid rgb(23, 22, 22)
+  width:40%; 
+  height:40%; 
+  border: 5px solid rgb(23, 22, 22);
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; overflow: hidden; 
+}
+.embed-youtube {
+ 
+  position: relative;
+  padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+  /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+  /* padding-bottom: 75%; - 4:3 aspect ratio */
+
+  height: 0;
+  overflow: hidden;
+
+}
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+.cinemaContainer {
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
 }
