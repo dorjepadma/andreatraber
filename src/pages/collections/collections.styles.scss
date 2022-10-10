@@ -52,7 +52,7 @@
 }
 .collectionCard {
   margin: auto;
-  width: 90%;
+  width: 60%;
   height: auto;
   color: whitesmoke;
   background-color: #835E4B;
@@ -64,7 +64,7 @@
   }
   @media screen and (max-width: 768px) {
     width: 20em;
-    height: auto;
+    font-size: medium;
     margin: 1em;
   }
 }
