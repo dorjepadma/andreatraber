@@ -47,6 +47,7 @@ const Navigation = () => {
             <MDBNavbarLink href='social'>SOCIAL</MDBNavbarLink>
             <MDBNavbarLink href='cinema'>CINEMA</MDBNavbarLink>
             <MDBNavbarLink href='contact'>CONTACT</MDBNavbarLink>
+            <MDBNavbarLink href='signIn'>SIGN IN</MDBNavbarLink>
           </MDBNavbarNav>
         </MDBCollapse>
         <MDBNavbarBrand href='HOME'>
