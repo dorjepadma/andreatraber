@@ -1,12 +1,13 @@
 import { Routes, Route} from 'react-router-dom';
-import Homepage from './pages/homepage/homepage.component';
-import Andrea from './pages/andrea/Andrea.component';
-import Social from './pages/social/social.component';
-import Collections from './pages/collections/collections.component';
-import Contemplations from './pages/contemplations/contemplations.component';
-import Cinema from './pages/cinema/cinema.component';
-import Contact from './pages/contact/contact.component';
-import Meditations from './pages/meditations/meditations.component';
+import Homepage from './routes/homepage/homepage.component';
+import Andrea from './routes/andrea/Andrea.component';
+import Social from './routes/social/social.component';
+import Collections from './routes/collections/collections.component';
+import Contemplations from './routes/contemplations/contemplations.component';
+import Cinema from './routes/cinema/cinema.component';
+import Contact from './routes/contact/contact.component';
+import Meditations from './routes/meditations/meditations.component';
+import Authentication from './routes/authenticationPage/Authentication.component'
 
 import Navigation from './components/navigation/navigation.component';
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
             <Route path='/social' index element={<Social />} />
             <Route path='/cinema' index element={<Cinema />} />
             <Route path='/contact' index element={<Contact />} />
+            <Route path='signIn' index element={<Authentication />}/>
           </Route>
         </Routes>
 

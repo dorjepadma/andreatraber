@@ -1,0 +1,31 @@
+.authentication-container {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  margin: 36px auto;
+  padding: 24px 24px;
+  opacity:.8;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 10px;
+  }
+    
+  }
+
+
+.authentication {
+
+  height: 120vh;
+  justify-content: space-between;
+  background-image: url(../../assets/images/SignIn/SignIn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: -40px;
+  @media screen and (max-width: 768px) {
+    height: 160vh;
+    margin-top: -40px;
+  }
+}
