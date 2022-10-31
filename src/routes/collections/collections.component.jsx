@@ -1,8 +1,7 @@
 import React from 'react';
-import Sky from '../../assets/images/CollectionsImages/Sky.png';
-import Sunflowers from '../../assets/images/CollectionsImages/Sunflowers-1.png';
-import Hung from '../../assets/images/CollectionsImages/hung.jpeg';
-import Fire from '../../assets/images/CollectionsImages/fire2.jpeg';
+import View from '../../assets/images/CollectionsImages/Sky.png';
+import Expressions from '../../assets/images/CollectionsImages/liquid.png';
+import Elements from '../../assets/images/CollectionsImages/fire2.jpeg';
 import Sea from '../../assets/images/CollectionsImages/atsea2.jpeg';
 import {
   MDBCarousel,
@@ -31,9 +30,9 @@ const Collections = () => {
               itemID={0}
             >
             <MDBCard className='collectionCard'>
-              <MDBCardImage src={Sky} position='top' alt='Painting fo the Sky' />
+              <MDBCardImage src={View} position='top' alt='Painting fo the Sky' />
               <MDBCardBody>
-                <MDBCardTitle>Sky</MDBCardTitle>
+                <MDBCardTitle>View</MDBCardTitle>
                 <MDBCardText>
                 This collection highlights a spacious mind. The sky is a place of freedom and imagination. It is a place of peace and tranquility. It is a place of endless possibilities. Through these paintings a serene meditative quality of mind is expressed. The result is transcendental experiences of contemplation. 
                 </MDBCardText>
@@ -46,17 +45,17 @@ const Collections = () => {
               itemID={1}
             >
           <MDBCard className='collectionCard'>
-              <MDBCardImage src={Sunflowers} position='top' alt='Painting fo the Sky'  />
+              <MDBCardImage src={Expressions} position='top' alt='Painting fo the Sky'  />
               <MDBCardBody>
-                <MDBCardTitle>Fun</MDBCardTitle>
+                <MDBCardTitle>Expressions</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights a playful experience through art. Here Andrea is playing with light hearted themes that reflect the joy of the heart and simplicity of the human mind unencumbered by the worries of daily life. 
+                This collection highlights Andreas talent as an expressionist painter. The paintings reflect the deep inner emotions that interpret our journey as humans, the interplay between our experience and the mind that experiences those experiences.
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
-          <MDBCarouselItem 
+          {/* <MDBCarouselItem 
               className="w-100 d-block"
               itemID={2}
             >
@@ -70,13 +69,13 @@ const Collections = () => {
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
-          </MDBCarouselItem>
+          </MDBCarouselItem> */}
           <MDBCarouselItem 
               className="w-100 d-block"
               itemID={3}
             >
             <MDBCard className='collectionCard'>
-              <MDBCardImage src={Fire} position='top' alt='The element of Fire' />
+              <MDBCardImage src={Elements} position='top' alt='The element of Fire' />
               <MDBCardBody>
                 <MDBCardTitle>Elements</MDBCardTitle>
                 <MDBCardText>
@@ -91,11 +90,11 @@ const Collections = () => {
               itemID={4}
             >
             <MDBCard className='collectionCard'>
-              <MDBCardImage src={Sea} position='top' alt='Abstract Sail boats at sea' />
+              <MDBCardImage src={Sea} position='top' alt='at sea 1' />
               <MDBCardBody>
-                <MDBCardTitle>Impressions</MDBCardTitle>
+                <MDBCardTitle>Nature is Medicine</MDBCardTitle>
                 <MDBCardText>
-                This collection highlights impressionistic paintings inspired by the San Francisco Bay Area and world travels. These paintings capture the essence of a place, emotion, or mood. They are evocative and transport the viewer through a mix of color, texture, and light.
+                This collection highlights impressionistic paintings inspired by the healing forces of Nature. These paintings capture the essence of a place, emotion, or mood. They are evocative and transport the viewer through a mix of color, texture, and light. They exist to inspire the viewer to connect with Nature and to find healing in the natural world.
                 </MDBCardText>
                 <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
               </MDBCardBody>
