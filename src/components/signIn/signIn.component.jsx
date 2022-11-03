@@ -22,21 +22,21 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
-
   const resetForm = () => {
     setFormFields(defaultFormFields);
   }
 
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
-
   };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const {user} = await signInAuthUserWithEmailAndPassword(email, password);
+      const {user} = await signInAuthUserWithEmailAndPassword(
+        email, 
+        password
+        );
 
 
       resetForm();
@@ -88,7 +88,7 @@ const handleChange = (event) => {
 
       <div className='buttonsContainer'>
         <MDBBtn 
-        // type='submit'
+        type='submit'
         >Sign In</MDBBtn>
         <MDBBtn 
         // type='button' buttonType='google' 

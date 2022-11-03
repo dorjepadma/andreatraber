@@ -5,7 +5,7 @@ import {
   createUserDocumentFromAuth } from '../../utils/Firebase/firebase.utils';
 
 import FormInput from '../formInput/formInput.component';
-import { MDBBtn, MDBBtnGroup } from 'mdb-react-ui-kit';
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 import './signUp.styles.scss';
 //create user object
