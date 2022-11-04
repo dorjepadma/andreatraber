@@ -1,5 +1,7 @@
-import React, { useState, } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import { UserContext } from '../../Context/user.context';
+import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 import {
   MDBIcon,
   MDBContainer,
@@ -18,7 +20,6 @@ import {
 
 // import { selectIsCartOpen } from '../../Store/Cart/Cart.selector';
 // import { selectCurrentUser } from '../../Store/User/User.selector';
-// import { signOutUser }  from '../../utils/Firebase/firebase.utils';
 // import { connect } from 'react-redux';
 
 import Sunflowers from '../../assets/images/Sunflowers.png';
@@ -27,6 +28,9 @@ import './navigation.styles.scss';
 
 const Navigation = () => {
   const [showNavSecond, setShowNavSecond] = useState(false);
+  const { currentUser } = useContext(UserContext);
+ 
+  console.log(currentUser)
   return (
 <div >
     <div className='navigation'>
@@ -47,7 +51,11 @@ const Navigation = () => {
             <MDBNavbarLink href='social'>SOCIAL</MDBNavbarLink>
             <MDBNavbarLink href='cinema'>CINEMA</MDBNavbarLink>
             <MDBNavbarLink href='contact'>CONTACT</MDBNavbarLink>
-            <MDBNavbarLink href='signIn'>SIGN IN</MDBNavbarLink>
+            {currentUser ? (
+              <MDBNavbarLink href='home'onClick={signOutUser} >SIGN OUT</MDBNavbarLink>
+            ) : (
+              <MDBNavbarLink href='signin'>SIGN IN</MDBNavbarLink>)}
+            
           </MDBNavbarNav>
         </MDBCollapse>
         <MDBNavbarBrand href='HOME'>

@@ -8,6 +8,7 @@ import Cinema from './routes/cinema/cinema.component';
 import Contact from './routes/contact/contact.component';
 import Meditations from './routes/meditations/meditations.component';
 import Authentication from './routes/authenticationPage/Authentication.component'
+import Elements from './routes/paintings/elements/elements.component';
 
 import Navigation from './components/navigation/navigation.component';
 import './App.css';
@@ -28,6 +29,7 @@ function App() {
             <Route path='/cinema' index element={<Cinema />} />
             <Route path='/contact' index element={<Contact />} />
             <Route path='signIn' index element={<Authentication />}/>
+            <Route path='Elements' index element={<Elements />}/>
           </Route>
         </Routes>
 
