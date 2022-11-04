@@ -24,7 +24,7 @@ const Collections = () => {
       </div>
  
         <MDBCarousel  showControls showIndicators fade className='collectionsCarousel'>
-        <div class="col-lg-12">
+        <div className="col-lg-12">
             <MDBCarouselItem 
               className='w-100 d-block active'
               itemID={0}
@@ -55,21 +55,7 @@ const Collections = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
-          {/* <MDBCarouselItem 
-              className="w-100 d-block"
-              itemID={2}
-            >
-            <MDBCard className='collectionCard'>
-              <MDBCardImage src={Hung} position='top' alt='Painting fo the Sky' />
-              <MDBCardBody>
-                <MDBCardTitle>Meditations</MDBCardTitle>
-                <MDBCardText>
-                This collection highlights visionary paintings from Andrea's personal spiritual practice. Andrea has studied esoteric Buddhism for decades and the unfolding of her understanding is reflected in these paintings, each express of the wisdom of the teachings she has received.
-                </MDBCardText>
-                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCarouselItem> */}
+        
           <MDBCarouselItem 
               className="w-100 d-block"
               itemID={3}
@@ -81,10 +67,11 @@ const Collections = () => {
                 <MDBCardText>
                 This collection highlights the raw power of the elements. The five elements are highlighted in the experience of the viewer through a mix of color and stroke style, creating a unique experience for each painting. As you look at these pieces observe how your mind reacts to them both emotionally and mentally. 
                 </MDBCardText>
-                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+                <MDBBtn className='collectionButton'href='elements'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem> 
+
           <MDBCarouselItem 
               className="w-100 d-block"
               itemID={4}

@@ -1,0 +1,57 @@
+
+
+.paintingText {
+  font-size: 24px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.paintingTitle {
+  font-size: 36px;
+  color: whitesmoke;
+  font-weight: bold;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.paintingCarousel  {
+  flex-direction: column;
+  height: 90vh;
+  padding: 20px;
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+.paintingCard {
+  margin: 5vh;
+  padding: 10px;
+  width: 50%;
+  height: auto;
+  color: whitesmoke;
+  background-color: #835E4B;
+  border-radius: 1em;
+  
+  @media screen and (max-width: 768px) {
+    width: 20em;
+    font-size: medium;
+    margin: 1em;
+  }
+}
+.paintingImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+  @media screen and (max-width: 768px) {
+    width: 20em;
+    font-size: medium;
+    margin: 1em;
+  }
+}
