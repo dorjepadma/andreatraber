@@ -13,18 +13,17 @@ import {
   MDBCardBody
 } from 'mdb-react-ui-kit';
  
-import '../paintings.styles.scss';
+import './elements.styles.scss';
 
 const Elements = () => {
   const { paintings } = useContext(PaintingsContext);
  
   return (
-    <div  className="paintingContainer">
-      <div className='paintingPageTitle'>
+    <div  className="elementsContainer">
+      <div className='elementsPageTitle'>
         <h1> The Elements Collection </h1>
       </div>
      <div className="paintingContainer">
-
       {paintings.map(( painting ) => (
       < PaintingCard key={painting.id} painting={painting}/>
       ))}

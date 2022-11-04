@@ -21,23 +21,23 @@ const PaintingCard = ({ painting }) => {
 
     <div className="col-lg-12">
       <MDBCarouselItem
-      className='w-100 d-block active'
+      className='w-10 d-block active'
     
       >
-      <div className='paintingCard'
+      <MDBCard className='paintingCard'
      >
    
         <MDBCardImage src={imageUrl} alt={`${title}`} position='top' className='paintingImage'/>
         <MDBCardBody>
           <MDBCardTitle className='paintingTitle'>{title}</MDBCardTitle>
-          <MDBCardText>{size}</MDBCardText>
-          <MDBCardText>{collection}</MDBCardText>
-          <MDBCardText>${price}</MDBCardText>
+          <MDBCardText >{size} {'•'} {collection}</MDBCardText>
+
+          {/* <MDBCardText>${price}</MDBCardText> */}
         </MDBCardBody>
-      {/* <div>
+      <div>
         <MDBBtn className='paintingButton'href={imageUrl}>View Painting</MDBBtn>
-      </div> */}
       </div>
+      </MDBCard>
       </MDBCarouselItem>
       </div>
     </div>
