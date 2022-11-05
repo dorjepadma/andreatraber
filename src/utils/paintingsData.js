@@ -1,4 +1,4 @@
-const PAINTINGS_DATA =[
+const PAINTINGS_DATA = [
   {
     title: 'The Elements Collection',
     items: [
