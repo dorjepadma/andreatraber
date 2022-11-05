@@ -20,15 +20,17 @@ const Collections = () => {
   return (
     <div  className="andreaCollectionsContainer">
       <div className='collectionsTitle'>
-        <h1> Andrea's Collections </h1>
+        <h1> 
+          Andrea's Collections 
+        </h1>
       </div>
  
-        <MDBCarousel  showControls showIndicators fade className='collectionsCarousel'>
+      <MDBCarousel  showControls showIndicators fade className='collectionsCarousel'>
         <div className="col-lg-12">
-            <MDBCarouselItem 
-              className='w-100 d-block active'
-              itemID={0}
-            >
+          <MDBCarouselItem 
+            className='w-100 d-block active'
+            itemID={0}
+          >
             <MDBCard className='collectionCard'>
               <MDBCardImage src={View} position='top' alt='Painting fo the Sky' />
               <MDBCardBody>
@@ -40,6 +42,7 @@ const Collections = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
+
           <MDBCarouselItem 
               className="w-100 d-block"
               itemID={1}
@@ -55,7 +58,7 @@ const Collections = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
-        
+          
           <MDBCarouselItem 
               className="w-100 d-block"
               itemID={3}
@@ -89,11 +92,9 @@ const Collections = () => {
             </MDBCard>
           </MDBCarouselItem>
          
+        </div>
+      </MDBCarousel>
     </div>
-    </MDBCarousel>
-       {/* </div>
-     </div> */}
-     </div>
 
   );
 

@@ -15,7 +15,7 @@ const PaintingCard = ({ painting }) => {
   const {    imageUrl, size, collection, price, media, name } = painting;
   return (
   <div>
-    <div className='paintingContainer2'>
+    <div className='paintingContainer'>
      
           <div >
             <MDBCard className='paintingCard'>    
