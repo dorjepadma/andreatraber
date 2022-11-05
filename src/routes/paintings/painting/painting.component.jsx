@@ -2,7 +2,7 @@ import { Routes, Route} from 'react-router-dom';
 
 import PaintingsPreview from '../../paintingsPreview/paintingsPreview.component';
 import Paintings from '../../paintingsPreview/paintingsPreview.component';
-import Category from '../../../components/categoryPreview/category/category.component';
+import Category from '../../../components/category/category.component';
 
  
 import './painting.styles.scss';

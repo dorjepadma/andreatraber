@@ -1,11 +1,11 @@
 import { useContext, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { CategoriesContext } from '../../../Context/categories.context';
+import { CategoriesContext } from '../../Context/categories.context';
 
 import './category.styles.scss'
 
-import PaintingCard from '../../paintingCard/paintingCard.component';
+import PaintingCard from '../paintingCard/paintingCard.component';
 
 const Category = () => {
   
@@ -20,7 +20,7 @@ const Category = () => {
   return (
     <div className='categoryContainer2'>
        <h2 className='categoryTitle' >
-        {category}
+        {category.toUpperCase()}
       </h2>
       { paintings &&
         paintings.map((painting) => <PaintingCard key={painting.id} painting={painting}/>)
