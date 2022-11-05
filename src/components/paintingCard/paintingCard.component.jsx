@@ -6,42 +6,33 @@ import {
   MDBCardText,
   MDBCardImage,
   MDBBtn,
-  MDBCarousel,
-  MDBCarouselItem,
 } from 'mdb-react-ui-kit';
 
 import './paintingCard.styles.scss' 
 
 
 const PaintingCard = ({ painting }) => {
-  const {  id, title, imageUrl, size, collection, price } = painting;
+  const {    imageUrl, size, collection, price, media, name } = painting;
   return (
   <div>
-    <div  showControls showIndicators fade className='paintingCarousel'>
-
-    <div className="col-lg-12">
-      <MDBCarouselItem
-      className='w-10 d-block active'
-    
-      >
-      <MDBCard className='paintingCard'
-     >
-   
-        <MDBCardImage src={imageUrl} alt={`${title}`} position='top' className='paintingImage'/>
-        <MDBCardBody>
-          <MDBCardTitle className='paintingTitle'>{title}</MDBCardTitle>
-          <MDBCardText >{size} {'•'} {collection}</MDBCardText>
-
-          {/* <MDBCardText>${price}</MDBCardText> */}
-        </MDBCardBody>
-      <div>
-        <MDBBtn className='paintingButton'href={imageUrl}>View Painting</MDBBtn>
+    <div className='paintingContainer2'>
+     
+          <div >
+            <MDBCard className='paintingCard'>    
+            <MDBCardImage src={imageUrl} alt={`${name}`} position='top' className='paintingImage'/>
+            <MDBCardBody>
+              <MDBCardTitle className='paintingTitle'>{name}</MDBCardTitle>
+              <MDBCardText className='paintingText'>{size} {'•'} {collection}</MDBCardText>
+              <MDBCardText className='paintingText'>{media}</MDBCardText>
+            </MDBCardBody>
+            <div>
+              <MDBBtn className='paintingButton'href={imageUrl}>View Painting</MDBBtn>
+            </div>
+            </MDBCard>
+        </div>
       </div>
-      </MDBCard>
-      </MDBCarouselItem>
-      </div>
-    </div>
-    </div>
+ 
+  </div>
   );
 }
 

@@ -18,7 +18,7 @@ import './collections.styles.scss';
 
 const Collections = () => {
   return (
-    <div  className="collectionsContainer">
+    <div  className="andreaCollectionsContainer">
       <div className='collectionsTitle'>
         <h1> Andrea's Collections </h1>
       </div>
@@ -36,7 +36,7 @@ const Collections = () => {
                 <MDBCardText>
                 This collection highlights a spacious mind. The sky is a place of freedom and imagination. It is a place of peace and tranquility. It is a place of endless possibilities. Through these paintings a serene meditative quality of mind is expressed. The result is transcendental experiences of contemplation. 
                 </MDBCardText>
-                <MDBBtn href='#'>View Collection</MDBBtn>
+                <MDBBtn href='paintings/the%20view%20collection'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
@@ -51,7 +51,7 @@ const Collections = () => {
                 <MDBCardText>
                 This collection highlights Andreas talent as an expressionist painter. The paintings reflect the deep inner emotions that interpret our journey as humans, the interplay between our experience and the mind that experiences those experiences.
                 </MDBCardText>
-                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+                <MDBBtn className='collectionButton'href='paintings/the%20expressions%20collection'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
@@ -67,7 +67,7 @@ const Collections = () => {
                 <MDBCardText>
                 This collection highlights the raw power of the elements. The five elements are highlighted in the experience of the viewer through a mix of color and stroke style, creating a unique experience for each painting. As you look at these pieces observe how your mind reacts to them both emotionally and mentally. 
                 </MDBCardText>
-                <MDBBtn className='collectionButton'href='elements'>View Collection</MDBBtn>
+                <MDBBtn className='collectionButton'href='paintings/the%20elements%20collection'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem> 
@@ -83,7 +83,8 @@ const Collections = () => {
                 <MDBCardText>
                 This collection highlights impressionistic paintings inspired by the healing forces of Nature. These paintings capture the essence of a place, emotion, or mood. They are evocative and transport the viewer through a mix of color, texture, and light. They exist to inspire the viewer to connect with Nature and to find healing in the natural world.
                 </MDBCardText>
-                <MDBBtn className='collectionButton'href='#'>View Collection</MDBBtn>
+                <MDBBtn className='collectionButton'href='paintings/the%20nature%20is%20medicine%20collection
+'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCarouselItem>
