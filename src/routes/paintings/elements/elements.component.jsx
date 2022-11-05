@@ -1,35 +1,29 @@
 import { useContext } from 'react';
 // import PAINTING_DATA from '../../../utils/paintingData.json';
-import { PaintingsContext } from '../../../Context/paintings.context';
+import { CategoriesContext } from '../../../Context/categories.context';
 import PaintingCard from '../../../components/paintingCard/paintingCard.component';
-import {
-  MDBCarousel,
-  MDBCarouselItem,
-  MDBCard,
-  MDBCardImage,
-  MDBCardTitle,
-  MDBCardText,
-  MDBBtn,
-  MDBCardBody
-} from 'mdb-react-ui-kit';
+
  
-import '../paintings.styles.scss';
+import './elements.styles.scss';
 
 const Elements = () => {
-  const { paintings } = useContext(PaintingsContext);
+  const { categoriesMap } = useContext(CategoriesContext);
  
   return (
-    <div  className="paintingContainer">
-      <div className='paintingPageTitle'>
-        <h1> The Elements Collection </h1>
-      </div>
-     <div className="paintingContainer">
-
-      {paintings.map(( painting ) => (
-      < PaintingCard key={painting.id} painting={painting}/>
-      ))}
-     </div>
-     
+    
+    <div  className="elementsContainer">
+      {
+        Object.keys(categoriesMap).map(title => (
+          <div className='elementsPageTitle' key={title} >
+              <h1>{title}</h1>
+          <div className="paintingContainer">
+            {categoriesMap[title].map(( painting ) => (
+            < PaintingCard key={painting.id} painting={painting}/>
+            ))}
+          </div>
+          </div>
+        ))
+      }
     </div>
 
   );

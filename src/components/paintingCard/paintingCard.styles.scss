@@ -1,4 +1,15 @@
 
+.paintingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100vw;
+  height: auto;
+  color: black;
+  background-color: black;
+}
 
 .paintingText {
   font-size: 24px;
@@ -6,7 +17,7 @@
   font-weight: bold;
   text-align: center;
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -19,39 +30,46 @@
     font-size: 24px;
   }
 }
-.paintingCarousel  {
-  flex-direction: column;
-  height: 90vh;
-  padding: 20px;
-  z-index: 1;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    height: 100vh;
-  }
-}
 .paintingCard {
-  margin: 5vh;
-  padding: 10px;
-  width: 50%;
-  height: auto;
+  padding: 25px;
+  width: auto;
   color: whitesmoke;
   background-color: #835E4B;
   border-radius: 1em;
-  
   @media screen and (max-width: 768px) {
+    padding: 0;
     width: 20em;
     font-size: medium;
     margin: 1em;
+  }
+  .paintingImage {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      font-size: medium;
+      margin: 1em;
+    }
   }
 }
-.paintingImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.paintingButton {
+  margin-top: -1em;
+  padding: 1em;
+  width: 10em;
+  height: 3em;
+  color: whitesmoke;
+  background-color: #90786c;
   border-radius: 1em;
-  @media screen and (max-width: 768px) {
-    width: 20em;
-    font-size: medium;
-    margin: 1em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
   }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    font-size: medium;
+    margin: .5em;
+  }
+
 }

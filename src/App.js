@@ -9,6 +9,7 @@ import Contact from './routes/contact/contact.component';
 import Meditations from './routes/meditations/meditations.component';
 import Authentication from './routes/authenticationPage/Authentication.component'
 import Elements from './routes/paintings/elements/elements.component';
+import Paintings from './routes/paintings/painting/painting.component'
 
 import Navigation from './components/navigation/navigation.component';
 import './App.css';
@@ -30,6 +31,7 @@ function App() {
             <Route path='/contact' index element={<Contact />} />
             <Route path='signIn' index element={<Authentication />}/>
             <Route path='Elements' index element={<Elements />}/>
+            <Route path='Paintings/*' index element={<Paintings />}/>
           </Route>
         </Routes>
 
