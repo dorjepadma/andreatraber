@@ -46,11 +46,11 @@ const Navigation = () => {
         </MDBNavbarToggler>
         <MDBCollapse navbar show={showNavSecond}>
           <MDBNavbarNav>
-            <MDBNavbarLink href='collections'>COLLECTIONS</MDBNavbarLink>
-            <MDBNavbarLink href='andrea'>ANDREA</MDBNavbarLink>
-            <MDBNavbarLink href='social'>SOCIAL</MDBNavbarLink>
-            <MDBNavbarLink href='cinema'>CINEMA</MDBNavbarLink>
-            <MDBNavbarLink href='contact'>CONTACT</MDBNavbarLink>
+            <MDBNavbarLink href='/collections'>COLLECTIONS</MDBNavbarLink>
+            <MDBNavbarLink href='/andrea'>ANDREA</MDBNavbarLink>
+            <MDBNavbarLink href='/social'>SOCIAL</MDBNavbarLink>
+            <MDBNavbarLink href='/cinema'>CINEMA</MDBNavbarLink>
+            <MDBNavbarLink href='/contact'>CONTACT</MDBNavbarLink>
             {currentUser ? (
               <MDBNavbarLink href='home'onClick={signOutUser} >SIGN OUT</MDBNavbarLink>
             ) : (
@@ -58,7 +58,7 @@ const Navigation = () => {
             
           </MDBNavbarNav>
         </MDBCollapse>
-        <MDBNavbarBrand href='HOME'>
+        <MDBNavbarBrand exact href='/home'>
           <div>
 
           ANDREA TRABER STUDIO
