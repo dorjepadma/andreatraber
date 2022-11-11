@@ -30,9 +30,18 @@
     font-size: 24px;
   }
 }
+.modalPaintingTitle {
+  font-size: 36px;
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
 .paintingCard {
   padding: 25px;
-  width: auto;
+  height: 60vh;
   color: whitesmoke;
   background-color: #835E4B;
   border-radius: 1em;
