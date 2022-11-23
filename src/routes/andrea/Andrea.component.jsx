@@ -64,7 +64,7 @@ const Andrea = () => {
         </MDBTypography>
 
         <MDBTypography tag='h5' className='mb-0'>
-          Having drawn all my life, I began painting in 1997 at the San Francisco Art Institute.  My early work was with Glenn Hirsch and Pam Lanza, using watercolor, pastels, charcoal, acrylics, and mixed media, with landscape drawing and painting capturing my attention.  In 2000, I sought out abstract painting with Brenda Vanoni, and I became obsessed and inspired.  I continued studying with Brenda at SFAI, then with Brent Hallard http://brenthallard.us/ at SFAI, and most recently with Mel Prest http://www.melprest.com/ at CCA and SFAI.  Painting is the counterbalance to my days as an architect and sustainability consultant, informing my analytical work with inspiration and creativity and joy. 
+        Having drawn all my life, I began painting in 1997 at the San Francisco Art Institute. My early work was with Glenn Hirsch and Pam Lanza, using watercolor, pastels, charcoal, acrylics, and mixed media, with landscape drawing and painting capturing my attention. In 2000, I sought out abstract painting with Brenda Vanoni, and I became  inspired by Brenda's process leading to abstraction. I continued studying with Brenda and Brent Hallard at San Francisco Art Institute, and most recently with Mel Prest  and Patrick Dintino at California College of the Arts. Painting is the counterbalance to my days as an architect and sustainability consultant, informing my analytical work with inspiration, creativity and joy.
         </MDBTypography>
 
       </div>
