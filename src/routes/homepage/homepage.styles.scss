@@ -12,6 +12,16 @@
   }
  }
 
+ .frontPieceContainer  {
+  flex-direction: column;
+  height: 90%;
+  padding: 20px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
 .title {
   font-family: Ubuntu;
   font-weight: 300;
