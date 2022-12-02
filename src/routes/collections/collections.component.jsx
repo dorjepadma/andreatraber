@@ -59,7 +59,7 @@ const Collections = () => {
             </MDBCard>
           </MDBCarouselItem>
           
-          <MDBCarouselItem 
+          {/* <MDBCarouselItem 
               className="w-100 d-block"
               itemID={3}
             >
@@ -73,7 +73,7 @@ const Collections = () => {
                 <MDBBtn className='collectionButton'href='paintings/the%20elements%20collection'>View Collection</MDBBtn>
               </MDBCardBody>
             </MDBCard>
-          </MDBCarouselItem> 
+          </MDBCarouselItem>  */}
 
           <MDBCarouselItem 
               className="w-100 d-block"
