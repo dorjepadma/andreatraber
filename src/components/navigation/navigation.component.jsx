@@ -58,9 +58,8 @@ const Navigation = () => {
             
           </MDBNavbarNav>
         </MDBCollapse>
-        <MDBNavbarBrand exact href='/home'>
+        <MDBNavbarBrand href='/home'>
           <div>
-
           ANDREA TRABER STUDIO
           </div>
           <div >
